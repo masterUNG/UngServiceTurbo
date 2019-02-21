@@ -56,6 +56,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CN3-be-Oya"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAp-SL-aNv">
                                 <rect key="frame" x="87.5" y="417" width="200" height="30"/>
@@ -102,6 +105,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="lYi-M1-hZT" id="FJz-eU-v9v"/>
+                        <outlet property="userTextField" destination="4kd-gK-4PK" id="wJb-m7-AqJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +129,7 @@
                                     <navigationItem title="Register" id="mv5-Vl-RKD">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="ArrowBack" id="yI8-D6-1IW">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="5ty-Su-5PH"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="BackHome" id="5ty-Su-5PH"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="s6H-wq-Ph1">

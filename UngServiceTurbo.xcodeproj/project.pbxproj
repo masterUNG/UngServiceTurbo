@@ -13,6 +13,7 @@
 		C45DB69B221E500300564011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45DB69A221E500300564011 /* Assets.xcassets */; };
 		C45DB69E221E500300564011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45DB69C221E500300564011 /* LaunchScreen.storyboard */; };
 		C45DB6A6221E5BAF00564011 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DB6A5221E5BAF00564011 /* RegisterViewController.swift */; };
+		C45DB6A8221E82C200564011 /* MyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DB6A7221E82C200564011 /* MyConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C45DB69D221E500300564011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C45DB69F221E500300564011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C45DB6A5221E5BAF00564011 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C45DB6A7221E82C200564011 /* MyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				C45DB695221E500100564011 /* ViewController.swift */,
 				C45DB697221E500100564011 /* Main.storyboard */,
 				C45DB6A5221E5BAF00564011 /* RegisterViewController.swift */,
+				C45DB6A7221E82C200564011 /* MyConstant.swift */,
 				C45DB69A221E500300564011 /* Assets.xcassets */,
 				C45DB69C221E500300564011 /* LaunchScreen.storyboard */,
 				C45DB69F221E500300564011 /* Info.plist */,
@@ -141,6 +144,7 @@
 				C45DB6A6221E5BAF00564011 /* RegisterViewController.swift in Sources */,
 				C45DB696221E500100564011 /* ViewController.swift in Sources */,
 				C45DB694221E500100564011 /* AppDelegate.swift in Sources */,
+				C45DB6A8221E82C200564011 /* MyConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
