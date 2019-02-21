@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             myAlert(title: "Have Space", message: "Please Fill All Blank")
         } else {
 //            No Space
-            
+            checkAuthen(user: user, password: password)
         }
         
     }   // loginButton
@@ -56,6 +56,33 @@ class ViewController: UIViewController {
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
+            guard let dataResponse = data else {
+                print("Have Error")
+                return
+            }
+            
+            do {
+                
+                let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: [])
+                guard let jsonArray = jsonResponse as? [[String: Any]] else {
+                    return
+                }
+                print(jsonArray[0])
+                for jsonDictionary in jsonArray {
+                    guard let truePassword: String = jsonDictionary["Password"] as? String else {
+                        return
+                    }
+                    if password == truePassword {
+                        print("Authen True")
+                    } else {
+                        print("Password False")
+                    }
+                }   // for
+                
+                
+            } catch let myError {
+                print(myError)
+            }
             
             
         } // end Task
